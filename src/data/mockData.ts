@@ -1,24 +1,49 @@
-import { Provider, ServiceCategory, SearchSuggestion } from '../types';
 
-export const HERO_IMAGE = '/src/assets/images/hero_pet_care_1794240725769.jpg';
-export const VET_CLINIC_IMAGE = '/src/assets/images/vet_clinic_care_1794240725736.jpg';
-export const BOARDING_IMAGE = '/src/assets/images/pet_boarding_care_1794240727472.jpg';
-export const EMERGENCY_IMAGE = '/src/assets/images/emergency_vet_care_1794240727695.jpg';
+import {
+  Provider,
+  ServiceCategory,
+  SearchSuggestion,
+} from '../types';
 
-// Unique, non-repeating photographic assets for every individual provider
-export const PROVIDER_IMG_CESSNA = '/src/assets/images/cessna_hospital_1794242149161.jpg';
-export const PROVIDER_IMG_CROWN = '/src/assets/images/crown_vet_clinic_1794242149425.jpg';
-export const PROVIDER_IMG_HEIDI = '/src/assets/images/heidi_pet_resort_1794242149732.jpg';
-export const PROVIDER_IMG_MAXVETS = '/src/assets/images/maxvets_delhi_1794242149897.jpg';
-export const PROVIDER_IMG_CARE_AMBULANCE = '/src/assets/images/care_ambulance_1794242166241.jpg';
-export const PROVIDER_IMG_VOSD = '/src/assets/images/vosd_sanctuary_1794242166870.jpg';
-export const PROVIDER_IMG_DR_RANA = '/src/assets/images/dr_rana_clinic_1794242166891.jpg';
-export const PROVIDER_IMG_SCANVET = '/src/assets/images/scanvet_lab_1794242167128.jpg';
-export const PROVIDER_IMG_APOLLO = '/src/assets/images/apollo_er_hospital_1794242183032.jpg';
-export const PROVIDER_IMG_BLUECROSS = '/src/assets/images/bluecross_shelter_1794242182334.jpg';
-export const PROVIDER_IMG_PUNE_AMBULANCE = '/src/assets/images/pune_pet_transit_1794242183835.jpg';
-export const PROVIDER_IMG_HAPPYTAILS = '/src/assets/images/happytails_boarding_1794242184207.jpg';
-export const PROVIDER_IMG_WSA = '/src/assets/images/wsa_dispensary_1794242212145.jpg';
+// Import images through Vite so they are bundled correctly for production.
+import HERO_IMAGE from '../assets/images/hero_pet_care_1794240725769.jpg';
+import VET_CLINIC_IMAGE from '../assets/images/vet_clinic_care_1794240725736.jpg';
+import BOARDING_IMAGE from '../assets/images/pet_boarding_care_1794240727472.jpg';
+import EMERGENCY_IMAGE from '../assets/images/emergency_vet_care_1794240727695.jpg';
+
+import PROVIDER_IMG_CESSNA from '../assets/images/cessna_hospital_1794242149161.jpg';
+import PROVIDER_IMG_CROWN from '../assets/images/crown_vet_clinic_1794242149425.jpg';
+import PROVIDER_IMG_HEIDI from '../assets/images/heidi_pet_resort_1794242149732.jpg';
+import PROVIDER_IMG_MAXVETS from '../assets/images/maxvets_delhi_1794242149897.jpg';
+import PROVIDER_IMG_CARE_AMBULANCE from '../assets/images/care_ambulance_1794242166241.jpg';
+import PROVIDER_IMG_VOSD from '../assets/images/vosd_sanctuary_1794242166870.jpg';
+import PROVIDER_IMG_DR_RANA from '../assets/images/dr_rana_clinic_1794242166891.jpg';
+import PROVIDER_IMG_SCANVET from '../assets/images/scanvet_lab_1794242167128.jpg';
+import PROVIDER_IMG_APOLLO from '../assets/images/apollo_er_hospital_1794242183032.jpg';
+import PROVIDER_IMG_BLUECROSS from '../assets/images/bluecross_shelter_1794242182334.jpg';
+import PROVIDER_IMG_PUNE_AMBULANCE from '../assets/images/pune_pet_transit_1794242183835.jpg';
+import PROVIDER_IMG_HAPPYTAILS from '../assets/images/happytails_boarding_1794242184207.jpg';
+import PROVIDER_IMG_WSA from '../assets/images/wsa_dispensary_1794242212145.jpg';
+
+export {
+  HERO_IMAGE,
+  VET_CLINIC_IMAGE,
+  BOARDING_IMAGE,
+  EMERGENCY_IMAGE,
+  PROVIDER_IMG_CESSNA,
+  PROVIDER_IMG_CROWN,
+  PROVIDER_IMG_HEIDI,
+  PROVIDER_IMG_MAXVETS,
+  PROVIDER_IMG_CARE_AMBULANCE,
+  PROVIDER_IMG_VOSD,
+  PROVIDER_IMG_DR_RANA,
+  PROVIDER_IMG_SCANVET,
+  PROVIDER_IMG_APOLLO,
+  PROVIDER_IMG_BLUECROSS,
+  PROVIDER_IMG_PUNE_AMBULANCE,
+  PROVIDER_IMG_HAPPYTAILS,
+  PROVIDER_IMG_WSA,
+};
 
 export const SERVICE_CATEGORIES: ServiceCategory[] = [
   {
@@ -534,7 +559,7 @@ export const MOCK_PROVIDERS: Provider[] = [
     openingHours: '09:00 AM – 05:00 PM (Closed Sundays)',
     isOpenNow: false,
     is24x7Emergency: false,
-    phone: '', // Intentionally blank to test missing telephone number graceful fallback!
+    phone: '',
     email: 'info@wsamumbai.mock',
     services: ['Anti-Rabies Camps', 'Free Wound Dressing', 'Community Cat Neutering', 'Foster Placements'],
     image: PROVIDER_IMG_WSA,
