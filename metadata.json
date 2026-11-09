@@ -1,0 +1,6 @@
+{
+  "name": "Practo for Animals",
+  "description": "Discover trusted veterinary clinics, animal hospitals, boarding, diagnostics, and 24/7 emergency care for pets across India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
